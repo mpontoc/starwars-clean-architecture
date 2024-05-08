@@ -8,7 +8,4 @@ import org.mapstruct.Mapper;
 @Mapper(componentModel = "spring")
 public interface StarWarsMapper {
     StarWarsPeopleModel toModel(StarWarsApiResponse response);
-    @InheritInverseConfiguration
-    StarWarsApiResponse toResponse(String response);
-
 }
