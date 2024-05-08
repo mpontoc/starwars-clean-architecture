@@ -7,7 +7,6 @@ import org.mapstruct.Mapper;
 
 @Mapper(componentModel = "spring")
 public interface StarWarsMapper {
-//    @Mapping(target = "height", defaultValue = "0") // Provide default value for height if it's null
     StarWarsPeopleModel toModel(StarWarsApiResponse response);
     @InheritInverseConfiguration
     StarWarsApiResponse toResponse(String response);
